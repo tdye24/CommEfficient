@@ -22,7 +22,6 @@ def read_data(data_dir):
                "username2": ...}
     """
     data = defaultdict(lambda : None)
-
     files = os.listdir(data_dir)
     files = [f for f in files if f.endswith(".json")]
     for f in files:
